@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathovision"
+version = "0.1.0"
+description = "Research prototype for tiled histopathology image exploration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.50",
+    "opencv-python-headless>=4.9",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "Pillow>=10.0",
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "medmnist>=3.0",
+]
+
+[project.optional-dependencies]
+wsi = [
+    "openslide-python>=1.4.6",
+    "openslide-bin>=4.0.0",
+]
+
+[tool.setuptools]
+packages = ["pathovision"]
