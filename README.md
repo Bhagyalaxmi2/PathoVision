@@ -4,7 +4,12 @@
 
 [![Project checks](https://github.com/Bhagyalaxmi2/PathoVision/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/Bhagyalaxmi2/PathoVision/actions/workflows/checks.yml)
 
-PathoVision is an engineering and learning prototype. It demonstrates image tiling, a lightweight tissue/background heuristic, quantitative summaries, visualization, and a ResNet-18 fine-tuning path for user-supplied labeled tile data.
+PathoVision is a research and engineering prototype for exploring histopathology images through an interactive, reproducible workflow.
+
+- **Process pathology imagery:** inspect standard PNG/JPEG/TIFF images or sample pyramidal whole-slide images with bounded memory and tile sampling.
+- **Measure tissue regions:** create a transparent heuristic tissue mask, connected-region overlays, tile-level tissue fractions, and focus/detail proxies.
+- **Explore transfer learning:** fine-tune an ImageNet-initialized ResNet-18 on labeled tile datasets and review class-level metrics; the included PathMNIST pilot is explicitly limited to its small benchmark patches.
+- **Review and export results:** use the Streamlit dashboard to inspect overlays, heatmaps, tile measurements, and privacy-conscious run reports.
 
 ![PathoVision on the three-level Aperio slide: overview, heuristic tissue-region overlay, and sampled tile-fraction heatmap](docs/assets/wsi_sample_preview.png)
 
