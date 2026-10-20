@@ -2,6 +2,8 @@
 
 **Tile-based histopathology image exploration with an optional PyTorch transfer-learning classifier.**
 
+[![Project checks](https://github.com/Bhagyalaxmi2/PathoVision/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/Bhagyalaxmi2/PathoVision/actions/workflows/checks.yml)
+
 PathoVision is an engineering and learning prototype. It demonstrates image tiling, a lightweight tissue/background heuristic, quantitative summaries, visualization, and a ResNet-18 fine-tuning path for user-supplied labeled tile data.
 
 ![PathoVision on the three-level Aperio slide: overview, heuristic tissue-region overlay, and sampled tile-fraction heatmap](docs/assets/wsi_sample_preview.png)
